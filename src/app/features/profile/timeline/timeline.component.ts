@@ -22,7 +22,7 @@ import { Article } from '../types';
               <span class="text-sm bg-[#3ea8ff] text-white px-1 rounded-md">Zenn</span>
             }
             @case ('hatena') {
-              <span class="text-sm bg-[#c6da9e] text-white px-1 rounded-md">Hatena</span>
+              <span class="text-sm bg-gray-500 text-white px-1 rounded-md">Hatena</span>
             }
           }
         </article>

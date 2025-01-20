@@ -7,10 +7,13 @@ env:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    env:
+      HATENA_API_KEY: ${{ secrets.HATENA_API_KEY }}
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - uses: oven-sh/setup-bun@4bc047ad259df6fc24a6c9b0f9a0cb08cf17fbe5 # v2.0.1
       - run: bun install --frozen-lockfile
+      - run: bun run codegen
       - run: bun run lint
       - run: bun run format:check
       - run: bun run build

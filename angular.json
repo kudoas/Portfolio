@@ -38,8 +38,7 @@
               }
             ],
             "styles": ["src/styles.css"],
-            "scripts": [],
-            "externalDependencies": ["http", "https", "url", "timers"]
+            "scripts": []
           },
           "configurations": {
             "production": {

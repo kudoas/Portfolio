@@ -11,7 +11,8 @@
     "format:check": "prettier --check 'src/**/**'",
     "format": "prettier --write 'src/**/**'",
     "lint": "ng lint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "codegen": "bun run src/environments/envgen.ts -o src/environments/generated.ts"
   },
   "private": true,
   "dependencies": {

@@ -5,7 +5,7 @@ export type SocialLink = {
 };
 
 export type Article = {
-  id: number;
+  id: string;
   title: string;
   url: string;
   publishedAt: Date;
